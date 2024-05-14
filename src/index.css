@@ -1,0 +1,27 @@
+:root {
+  --dark-main-clr: #bc7714;
+  --main-clr: #ffa726;
+  --main-bg: #e79110;
+  --body-bg: #000;
+  --footer-bg: #333;
+  --black-clr: #000;
+  --white-clr: #fff;
+  --shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  --transition-duration: 0.6s;
+  --transition-duration-sm: 0.3s;
+  --radius: 6px;
+  --padding: 40px;
+  --radius-sm: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Rose", sans-serif;
+  background-color: var(--body-bg);
+  color: var(--white-clr);
+}
