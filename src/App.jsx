@@ -1,6 +1,7 @@
 import AppProvider from "./context";
 import { Routes, Route } from "react-router-dom";
 import {
+  AboutUs,
   BlogListPage,
   BlogPage,
   Contact,
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<PageSections />} />
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/events" element={<EventListPage />} />
           <Route path="/blog" element={<BlogListPage />} />
           <Route path="/events/:id" element={<EventPage />} />
