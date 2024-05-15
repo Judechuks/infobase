@@ -1,0 +1,19 @@
+#upcoming {
+  padding-block: 2rem;
+
+  article {
+    color: var(--black-clr);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    gap: 15px;
+
+    @media screen and (max-width: 940px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 640px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
