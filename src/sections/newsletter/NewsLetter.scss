@@ -1,0 +1,46 @@
+.newsletter {
+  article {
+    max-width: 800px;
+    margin-top: 20px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    // flex-wrap: wrap;
+    align-items: center;
+
+    p {
+      width: 100%;
+    }
+
+    form {
+      width: 100%;
+      border: 1px solid var(--main-clr);
+    }
+    input,
+    button {
+      padding: 4px 8px;
+      display: block;
+      width: 100%;
+      outline: none;
+      font-size: 1rem;
+      border: 1px solid var(--main-clr);
+      outline: none;
+    }
+    input:focus {
+      background-color: #ddd;
+    }
+    button {
+      background: #000;
+      color: inherit;
+      border: 1px solid var(--main-clr);
+      cursor: pointer;
+      &:hover {
+        color: var(--main-clr);
+      }
+    }
+
+    @media screen and (max-width: 580px) {
+      flex-direction: column;
+    }
+  }
+}
