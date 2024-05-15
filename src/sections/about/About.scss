@@ -1,0 +1,30 @@
+#about {
+  padding-top: 4rem;
+  // padding-top: 9rem auto 2rem;
+
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+
+    article {
+      flex-basis: 50%;
+
+      p {
+        line-height: 1.4;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
