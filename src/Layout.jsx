@@ -12,6 +12,7 @@ const Layout = () => {
       ) : (
         <>
           <Header />
+          <div style={{ paddingBottom: "60px" }}></div>
           <Outlet />
           <Footer />
         </>
