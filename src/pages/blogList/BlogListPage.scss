@@ -1,0 +1,22 @@
+#blog-container {
+  padding-block: 2rem;
+
+  .page-num {
+    color: var(--white-clr);
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    gap: 15px;
+
+    @media screen and (max-width: 940px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 640px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
