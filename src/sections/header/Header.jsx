@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header className="header">
       <a href="/" className="brand">
         <h1>
           Obaji<span>Festival</span>
