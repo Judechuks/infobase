@@ -1,0 +1,27 @@
+#events-container {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    color: var(--black-clr);
+    gap: 15px;
+
+    @media screen and (max-width: 940px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 640px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .loaded-container {
+    min-height: 40vh;
+    display: grid;
+    place-items: center;
+
+    .loaded-info {
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+}
