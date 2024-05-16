@@ -1,0 +1,114 @@
+#contact {
+  padding-block: 30px;
+
+  > p {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  article {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 30px;
+  }
+
+  .col-1 {
+    flex-basis: 39%;
+    box-shadow: var(--shadow);
+    padding: 40px 20px;
+    border-block: 4px solid var(--main-clr);
+  }
+  .col-1 .card {
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    margin-block: 20px;
+    span {
+      background: var(--footer-bg);
+      width: 40px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+
+      &:hover {
+        background: var(--main-clr);
+      }
+      i {
+        font-size: 1.2rem;
+        color: var(--main-clr);
+      }
+    }
+  }
+  .col-1 span:hover i {
+    color: white;
+  }
+  .col-1 aside {
+    color: var(--white-cl);
+    h3 {
+      text-transform: capitalize;
+      margin-bottom: 8px;
+    }
+    a {
+      color: inherit;
+      &:hover {
+        color: var(--main-clr);
+      }
+    }
+  }
+
+  .col-2 {
+    flex-basis: 58%;
+    box-shadow: var(--shadow);
+    padding: 40px 20px;
+    border-block: 4px solid var(--main-clr);
+  }
+  .col-2 .input-container {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 510px) {
+      flex-direction: column;
+    }
+  }
+  .col-2 .input-container input {
+    flex-basis: 49%;
+  }
+  .col-2 input,
+  .col-2 textarea {
+    padding: 8px;
+    border-radius: 4px;
+    border: 2px solid rgb(150, 150, 150, 0.3);
+    background: var(--body-bg);
+    color: var(--white-clr);
+    outline: 0;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .col-2 input:focus,
+  .col-2 textarea:focus {
+    border: 2px solid var(--main-clr);
+  }
+  .col-2 input,
+  .col-2 textarea,
+  .col-2 .btn {
+    font-size: 1.1rem;
+    font-family: "Red Rose", sans-serif;
+
+    @media screen and (max-width: 510px) {
+      font-size: 1rem;
+    }
+  }
+  .col-2 .btn {
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+  }
+
+  @media screen and (max-width: 985px) {
+    article {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}
