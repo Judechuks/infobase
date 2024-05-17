@@ -20,7 +20,7 @@ const Footer = () => {
       <article>
         <div className="col">
           <a href="/" className="brand">
-            Obaji<span>Festival</span>
+            Infobase
           </a>
           <p>{footerData?.data?.attributes.desc}</p>
           <form action="" className="subscribe">
@@ -70,9 +70,7 @@ const Footer = () => {
         </div>
       </article>
       <div className="divider">
-        <p>
-          All rights reserved &copy; Obajifestival {new Date().getFullYear()}
-        </p>
+        <p>All rights reserved &copy; Infobase {new Date().getFullYear()}</p>
         <div className="social-icons">
           {footerData?.data?.attributes?.social_links?.data.map(
             (item, index) => {
