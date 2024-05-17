@@ -11,9 +11,7 @@ const Header = () => {
   return (
     <header className="header">
       <a href="/" className="brand">
-        <h1>
-          Obaji<span>Festival</span>
-        </h1>
+        <h1>Infobase</h1>
       </a>
       <nav>
         <ul className={`${active && "active"}`}>
