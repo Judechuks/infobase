@@ -2,7 +2,7 @@
   display: grid;
   place-items: center;
   position: relative;
-  min-height: 80vh;
+  min-height: 65vh;
   border-radius: 15px;
   background-color: var(--main-bg);
   color: var(--white-clr);
@@ -27,15 +27,16 @@
     h1 {
       font-size: 2.5rem;
       text-transform: capitalize;
+      max-width: 600px;
       margin-bottom: 1rem;
 
       @media screen and (max-width: 600px) {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
       }
     }
 
     p {
-      max-width: 800px;
+      max-width: 600px;
       line-height: 1.4;
     }
 
