@@ -1,0 +1,24 @@
+/*===== SWIPER JS STYLES =====*/
+.swiper-pagination {
+  bottom: -5px;
+}
+
+// .swiper-pagination-bullet-active-main,
+// .swiper-pagination-bullet-active,
+.swiper-pagination-bullet {
+  background-color: var(--main-clr);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--main-clr);
+}
+
+@media screen and (max-width: 800px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
