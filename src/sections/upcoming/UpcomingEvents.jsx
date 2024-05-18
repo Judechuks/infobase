@@ -11,9 +11,13 @@ const UpcomingEvents = () => {
       <section id="upcoming">
         <h1 className="section-title">Upcoming Events</h1>
         <article>
-          {upcomingEvents?.map((item, index) => (
-            <Event key={index} id={item.id} {...item?.attributes} />
-          ))}
+          {
+            upcomingEvents
+              ?.map((item, index) => (
+                <Event key={index} id={item.id} {...item?.attributes} />
+              ))
+              .slice(-3) // last 3 events
+          }
         </article>
 
         <Link to="events" className="btn see-more">
