@@ -15,7 +15,7 @@ const RecentBlog = () => {
             ?.map((blog, index) => (
               <Blog key={index} id={blog.id} {...blog?.attributes} />
             ))
-            .slice(-3) // last 3 events
+            .slice(-3) // last 3 blogs
         }
       </article>
       <Link to="blog" className="btn see-more">
