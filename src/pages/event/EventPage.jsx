@@ -128,21 +128,30 @@ const EventPage = () => {
                             (item, index) => {
                               if (item.platform == "facebook") {
                                 return (
-                                  <a key={index} href={item.link}>
+                                  <a
+                                    key={index}
+                                    href={item.link}
+                                    target="_blank">
                                     <FaFacebook />
                                   </a>
                                 );
                               }
                               if (item.platform == "twitter") {
                                 return (
-                                  <a key={index} href={item.link}>
+                                  <a
+                                    key={index}
+                                    href={item.link}
+                                    target="_blank">
                                     <FaSquareXTwitter />
                                   </a>
                                 );
                               }
                               if (item.platform == "instagram") {
                                 return (
-                                  <a key={index} href={item.link}>
+                                  <a
+                                    key={index}
+                                    href={item.link}
+                                    target="_blank">
                                     <FaSquareInstagram />
                                   </a>
                                 );
