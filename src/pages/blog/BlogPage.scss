@@ -1,0 +1,160 @@
+#blog-page {
+  .blog-banner {
+    width: 100%;
+    // height: 300px;
+    aspect-ratio: 2.5/1;
+    border-radius: var(--radius);
+
+    @media screen and (max-width: 800px) {
+      aspect-ratio: 1.7/1;
+    }
+  }
+
+  main {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 15px;
+    padding: 10px;
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .author-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      width: 60px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  }
+
+  .col-1 {
+    .sub-title {
+      margin-block: 15px;
+      background-color: var(--dark-main-clr);
+      color: var(--white-clr);
+      padding: 6px;
+    }
+
+    .text-content {
+      line-height: 1.4;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-block: 10px;
+      }
+    }
+  }
+
+  .col-2 {
+    padding: 5px;
+    width: 340px;
+
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
+
+    .category-container,
+    .photo-gallery-container,
+    .moments,
+    .related-posts-section {
+      padding-bottom: 10px;
+      border-top: 2px solid var(--main-clr);
+
+      h3:not(.category-h3) {
+        margin: 15px auto 10px;
+      }
+    }
+
+    .category-container {
+      border: none;
+      display: grid;
+      padding: 15px 0;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 10px;
+
+      p {
+        font-size: 1.2rem;
+        text-transform: capitalize;
+      }
+    }
+
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+
+      img {
+        width: 100%;
+        aspect-ratio: 1.5/1;
+        border-radius: var(--radius);
+
+        &:hover {
+          filter: brightness(140%);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .moments {
+      video {
+        width: 100%;
+      }
+    }
+    .related-posts-section {
+      .related-posts-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .related-posts {
+          flex-basis: 48%;
+          color: var(--white-clr);
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          &:hover {
+            color: var(--main-clr);
+          }
+
+          .thumbnail {
+            flex-basis: 40%;
+          }
+
+          img {
+            width: 100%;
+            aspect-ratio: 1.5/1;
+            border-radius: var(--radius);
+          }
+
+          aside {
+            flex-basis: 59%;
+
+            h4 + p {
+              margin-block: 4px;
+            }
+          }
+          @media screen and (min-width: 600px) and (max-width: 800px) {
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
+}
