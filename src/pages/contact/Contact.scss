@@ -111,4 +111,10 @@
       gap: 40px;
     }
   }
+
+  @media screen and (min-width: 1020px) and (min-height: 1000px) {
+    min-height: 69dvh;
+    display: grid;
+    place-items: center;
+  }
 }
