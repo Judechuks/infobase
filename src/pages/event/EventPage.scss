@@ -59,16 +59,16 @@
 
         nav {
           flex-basis: 45%;
+          h4 {
+            font-size: 1.25rem;
+            color: var(--main-clr);
+            @media screen and (min-width: 600px) {
+              font-size: 1.4rem;
+            }
+          }
         }
         nav:nth-child(1) {
           flex-basis: 100%;
-        }
-
-        h4 {
-          font-size: 1.25rem;
-          @media screen and (min-width: 600px) {
-            font-size: 1.4rem;
-          }
         }
 
         h5 {
@@ -217,20 +217,6 @@
       display: block;
       margin-block: 10px;
       text-align: center;
-    }
-  }
-  .question {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    @media screen and (max-width: 500px) {
-      font-size: 1.4rem;
-      flex-direction: column;
-    }
-
-    h2 {
-      font-size: 2rem;
     }
   }
 }
