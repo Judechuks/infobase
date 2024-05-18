@@ -29,6 +29,7 @@ const AboutUs = () => {
           <div className="btn-container">
             <a
               href={aboutData?.data?.attributes.partnershipLink}
+              target="_blank"
               className="btn">
               Partner With Us
             </a>
