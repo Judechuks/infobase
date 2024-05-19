@@ -1,8 +1,8 @@
 .newsletter {
   article {
-    max-width: 800px;
+    // max-width: 800px;
     margin-top: 20px;
-    margin: auto;
+    // margin: auto;
     display: flex;
     gap: 20px;
     // flex-wrap: wrap;
@@ -14,6 +14,7 @@
 
     form {
       width: 100%;
+      display: flex;
       border: 1px solid var(--main-clr);
     }
     input,
@@ -33,6 +34,7 @@
       background: #000;
       color: inherit;
       border: 1px solid var(--main-clr);
+      width: 50%;
       cursor: pointer;
       &:hover {
         color: var(--main-clr);
