@@ -31,7 +31,7 @@ const BlogListPage = () => {
 
   // categories for the blogs
   const categories = new Set(
-    blogData.data?.map((item) => item?.attributes.category.toLowerCase())
+    blogData.data?.map((item) => item?.attributes.category)
   );
 
   const [active, setActive] = useState("all");
