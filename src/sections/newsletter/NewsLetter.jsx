@@ -10,8 +10,7 @@ const NewsLetter = () => {
           updates. Don&rsquo;t miss out.
         </p>
         <form action="">
-          <input type="tel" placeholder="Enter Your Name" />
-          <input type="tel" placeholder="Enter Your Email" />
+          <input type="email" placeholder="Enter Your Email" />
           <button>Subscribe</button>
         </form>
       </article>
