@@ -1,6 +1,5 @@
 import { useEffect, useState, createContext, useContext } from "react";
 // import { eventData } from "../constant";
-// import useFetch from "../hooks/useFetch";
 
 const AppContext = createContext();
 const domain = "http://localhost:1337";
@@ -77,7 +76,7 @@ const AppProvider = ({ children }) => {
     let mins = 0;
     const AM_or_PM = eventDate.getHours() < 12 ? "AM" : "PM";
     // hours
-    eventDate.getHours() < 12
+    eventDate.getHours() <= 12
       ? (hrs = eventDate.getHours())
       : (hrs = eventDate.getHours() - 12);
     // minutes
