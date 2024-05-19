@@ -16,7 +16,7 @@ const UpcomingEvents = () => {
               ?.map((item, index) => (
                 <Event key={index} id={item.id} {...item?.attributes} />
               ))
-              .slice(-3) // last 3 events
+              .slice(0, 3) // first 3 events
           }
         </article>
 
