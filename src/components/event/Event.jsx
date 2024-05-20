@@ -13,7 +13,8 @@ const Event = ({ id, thumbnail, title, text, date, time, venue }) => {
     <div className="event-card">
       <Link to={`/events/${id}`}>
         <img
-          src={`${domain}${thumbnail.data?.attributes.url}`}
+          // src={`${domain}${thumbnail.data?.attributes.url}`}
+          src={`${thumbnail.data?.attributes.url}`}
           alt="event thumbnail"
         />
       </Link>
