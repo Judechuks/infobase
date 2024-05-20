@@ -4,7 +4,8 @@ import "./AboutUs.scss";
 
 const AboutUs = () => {
   // getting about information
-  const { aboutData, domain } = useGlobalContext();
+  // const { aboutData, domain } = useGlobalContext();
+  const { aboutData } = useGlobalContext();
   console.log(aboutData);
 
   // getting the relevant icon based on the type of statement
@@ -43,7 +44,8 @@ const AboutUs = () => {
       <section className="about">
         <article>
           <img
-            src={`${domain}${aboutData?.data?.attributes.aboutImg.data?.attributes?.url}`}
+            // src={`${domain}${aboutData?.data?.attributes.aboutImg.data?.attributes?.url}`}
+            src={`${aboutData?.data?.attributes.aboutImg.data?.attributes?.url}`}
             alt="about"
           />
         </article>
