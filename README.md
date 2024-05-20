@@ -27,7 +27,7 @@ As a tech enthusiast, Learning is an unending journey. So I felt the need to pro
 
 #### LINK
 
-**[Infobase](https://infobase)**
+**[Infobase](https://infobasehub.vercel.app/)**
 
 ---
 
