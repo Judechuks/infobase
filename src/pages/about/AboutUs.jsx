@@ -6,7 +6,6 @@ const AboutUs = () => {
   // getting about information
   // const { aboutData, domain } = useGlobalContext();
   const { aboutData } = useGlobalContext();
-  console.log(aboutData);
 
   // getting the relevant icon based on the type of statement
   const getIcon = (type) => {
