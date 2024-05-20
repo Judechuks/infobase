@@ -4,13 +4,14 @@ import { useGlobalContext } from "../../context";
 import "./Blog.scss";
 
 const Blog = ({ id, thumbnail, title, text, author, date, imgLink }) => {
-  const { domain } = useGlobalContext();
+  // const { domain } = useGlobalContext();
   const eventDate = new Date(date);
   return (
     <div className="blog-card">
       <Link to={`/blog/${id}`}>
         <img
-          src={`${domain}${thumbnail.data?.attributes.url}`}
+          // src={`${domain}${thumbnail.data?.attributes.url}`}
+          src={`${thumbnail.data?.attributes.url}`}
           alt="blog thumbnail"
         />
       </Link>
