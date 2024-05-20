@@ -3,11 +3,13 @@ import { useGlobalContext } from "../../context";
 import "./Hero.scss";
 
 const Hero = () => {
-  const { heroData, domain } = useGlobalContext();
+  // const { heroData, domain } = useGlobalContext();
+  const { heroData } = useGlobalContext();
   return (
     <section id="hero">
       <img
-        src={`${domain}${heroData?.data?.attributes?.heroImg?.data?.attributes?.url}`}
+        // src={`${domain}${heroData?.data?.attributes?.heroImg?.data?.attributes?.url}`}
+        src={`${heroData?.data?.attributes?.heroImg?.data?.attributes?.url}`}
         alt="hero image"
       />
       <article>
