@@ -37,10 +37,10 @@ The core features of this project are:
 
 - #### Blogs
 
-  The blog feature provides insights and updates on things happening in different sectors and field of life such as: business, technology, innovation, culture, forex, crypto market, stock, real estate etc.
+  The blog feature provides insights and updates on things happening in different sectors and fields of life such as business, technology, innovation, culture, forex, crypto market, stock, real estate, etc.
 
 - #### Events
-  The events feature provide update on our events such as summits, seminars. Events are held to foster collaboration, stay relevant and updated on different trends and tools that will increase productivity for businesses and individuals.
+  The events feature provides updates on our events such as summits, and seminars. Events are held to foster collaboration, and stay relevant and updated on different trends and tools that will increase productivity for businesses and individuals.
 
 #### PAGES/SECTIONS
 
