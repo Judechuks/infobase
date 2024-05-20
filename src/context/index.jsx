@@ -2,8 +2,8 @@ import { useEffect, useState, createContext, useContext } from "react";
 // import { eventData } from "../constant";
 
 const AppContext = createContext();
-// const domain = "http://localhost:1337";
-const domain = "https://certain-desire-1a3d12402a.strapiapp.com";
+const domain = "http://localhost:1337";
+// const domain = "https://certain-desire-1a3d12402a.strapiapp.com";
 
 const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
