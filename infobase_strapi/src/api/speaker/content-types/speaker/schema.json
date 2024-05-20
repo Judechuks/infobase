@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "speakers",
+  "info": {
+    "singularName": "speaker",
+    "pluralName": "speakers",
+    "displayName": "Speaker",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "imgLink": {
+      "type": "string"
+    },
+    "handle": {
+      "type": "component",
+      "repeatable": true,
+      "component": "speaker-handle.speaker"
+    }
+  }
+}

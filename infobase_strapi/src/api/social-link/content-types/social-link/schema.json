@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "social_links",
+  "info": {
+    "singularName": "social-link",
+    "pluralName": "social-links",
+    "displayName": "Social Link",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "whatsapp",
+        "twitter",
+        "instagram",
+        "youtube",
+        "tiktok",
+        "linkedin"
+      ]
+    }
+  }
+}

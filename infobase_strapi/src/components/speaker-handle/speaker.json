@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_speaker_speakers",
+  "info": {
+    "displayName": "Speaker Handle",
+    "icon": "folder",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "twitter",
+        "instagram"
+      ]
+    }
+  }
+}

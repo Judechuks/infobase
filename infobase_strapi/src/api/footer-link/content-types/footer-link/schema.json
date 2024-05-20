@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_links",
+  "info": {
+    "singularName": "footer-link",
+    "pluralName": "footer-links",
+    "displayName": "FooterLinks",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "desc": {
+      "type": "text"
+    },
+    "contact_links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-link.contact-link"
+    },
+    "social_links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::social-link.social-link"
+    }
+  }
+}

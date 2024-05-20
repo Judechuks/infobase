@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_mission_statement_mission_and_visions",
+  "info": {
+    "displayName": "Mission and vision",
+    "icon": "briefcase",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "statement": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "mission",
+        "vision",
+        "core values"
+      ]
+    }
+  }
+}

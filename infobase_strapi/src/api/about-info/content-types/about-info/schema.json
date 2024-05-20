@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_infos",
+  "info": {
+    "singularName": "about-info",
+    "pluralName": "about-infos",
+    "displayName": "aboutInfo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "aboutDesc": {
+      "type": "text"
+    },
+    "introMsg": {
+      "type": "text"
+    },
+    "introTitle": {
+      "type": "string"
+    },
+    "introDesc": {
+      "type": "text"
+    },
+    "partnershipLink": {
+      "type": "string"
+    },
+    "mission": {
+      "type": "component",
+      "repeatable": true,
+      "component": "mission-statement.mission-and-vision"
+    }
+  }
+}

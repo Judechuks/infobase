@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_links",
+  "info": {
+    "singularName": "contact-link",
+    "pluralName": "contact-links",
+    "displayName": "Contact Link",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contact": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "call",
+        "email",
+        "location"
+      ]
+    }
+  }
+}
