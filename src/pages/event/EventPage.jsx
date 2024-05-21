@@ -30,6 +30,15 @@ const EventPage = () => {
 
   const currentEvent = eventData?.data?.find((event) => event.id == id);
 
+  // if no event is found
+  if (!currentEvent) {
+    return (
+      <section className="loaded-container">
+        <h1 className="loaded-info">{`Event with ID ${id} does not exist.`}</h1>
+      </section>
+    );
+  }
+
   const dateAndTime = `${currentEvent?.attributes?.date} ${currentEvent?.attributes?.time}`;
   const eventDate = new Date(dateAndTime);
   const difference = eventDate - Date.now();
