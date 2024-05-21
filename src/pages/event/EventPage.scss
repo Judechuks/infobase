@@ -181,6 +181,7 @@
 
   .sponsor-container {
     display: grid;
+    justify-items: center;
     gap: 20px;
     grid-template-columns: 1fr;
     margin-bottom: 40px;
@@ -203,7 +204,8 @@
 
     figure {
       // width: 260px;
-      height: 130px;
+      height: 150px;
+      aspect-ratio: 1/0.9;
       border-radius: 5px;
       box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.863);
 
