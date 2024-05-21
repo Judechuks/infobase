@@ -87,6 +87,5 @@ const BlogListPage = () => {
       />
     </section>
   );
-  // return <h1>hi</h1>;
 };
 export default BlogListPage;
