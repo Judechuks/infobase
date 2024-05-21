@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useGlobalContext } from "../../context";
 import "./Contact.scss";
 
@@ -36,9 +37,9 @@ const Contact = () => {
                 </span>
                 <aside>
                   <h3>{item?.attributes?.type}:</h3>
-                  <a href={item?.attributes?.link}>
+                  <Link to={item?.attributes?.link}>
                     {item?.attributes?.contact}
-                  </a>
+                  </Link>
                 </aside>
               </div>
             )
