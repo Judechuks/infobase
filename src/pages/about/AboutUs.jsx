@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useGlobalContext } from "../../context";
 import { Testimonials } from "../../sections";
 import "./AboutUs.scss";
@@ -27,15 +28,15 @@ const AboutUs = () => {
           <h1>{aboutData?.data?.attributes.introTitle}</h1>
           <p>{aboutData?.data?.attributes.introMsg}</p>
           <div className="btn-container">
-            <a
-              href={aboutData?.data?.attributes.partnershipLink}
+            <Link 
+              to={aboutData?.data?.attributes.partnershipLink}
               target="_blank"
               className="btn">
               Partner With Us
-            </a>
-            <a href="/contact" className="btn cta">
+            </Link>
+            <Link to="/contact" className="btn cta">
               Reach out to Us
-            </a>
+            </Link>
           </div>
         </div>
       </section>
