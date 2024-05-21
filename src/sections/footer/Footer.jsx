@@ -7,6 +7,7 @@ import {
   FaTiktok,
   FaLinkedin,
 } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 // import { footerLinks } from "../../constant";
 import { useGlobalContext } from "../../context";
 import "./Footer.scss";
@@ -19,9 +20,9 @@ const Footer = () => {
     <footer>
       <article>
         <div className="col">
-          <a href="/" className="brand">
+          <Link to="/" className="brand">
             Infobase
-          </a>
+          </Link>
           <p>{footerData?.data?.attributes.desc}</p>
           <form action="" className="subscribe">
             <input type="email" placeholder="Enter Your Email" />
@@ -32,13 +33,13 @@ const Footer = () => {
           <h2>Quick Links</h2>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -46,13 +47,13 @@ const Footer = () => {
           <h2>Resources</h2>
           <ul>
             <li>
-              <a href="/blog">Blog</a>
+              <Link to="/blog">Blog</Link>
             </li>
             <li>
-              <a href="/events">Events</a>
+              <Link to="/events">Events</Link>
             </li>
             <li>
-              <a href="/contact">Help Desk</a>
+              <Link to="/contact">Help Desk</Link>
             </li>
           </ul>
         </div>
@@ -61,9 +62,9 @@ const Footer = () => {
           <ul>
             {footerData?.data?.attributes?.contact_links.data.map(
               (item, index) => (
-                <a key={index} href={item?.attributes?.link}>
+                <Link key={index} to={item?.attributes?.link}>
                   <li>{item?.attributes?.contact}</li>
-                </a>
+                </Link>
               )
             )}
           </ul>
