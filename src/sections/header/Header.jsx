@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.scss";
 
 const Header = () => {
@@ -10,26 +11,26 @@ const Header = () => {
 
   return (
     <header className="header">
-      <a href="/" className="brand">
+      <Link to="/" className="brand">
         <h1>Infobase</h1>
-      </a>
+      </Link>
       <nav>
         <ul className={`${active && "active"}`}>
           <li onClick={toggleMenu}>
-            <a href="/#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li onClick={toggleMenu}>
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li onClick={toggleMenu}>
-            <a href="/events">Events</a>
+            <Link to="/events">Events</Link>
           </li>
           <li onClick={toggleMenu}>
-            <a href="/blog">Blog</a>
+            <Link to="/blog">Blog</Link>
           </li>
 
           <li onClick={toggleMenu}>
-            <a href="/contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
         {/* Hamburger */}
