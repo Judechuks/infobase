@@ -11,8 +11,21 @@ const BlogPage = () => {
   // const { domain, blogData } = useGlobalContext();
   const { blogData } = useGlobalContext();
 
+  const [showModal, setShowModal] = useState(false);
+  const [itemOnModal, setItemOnModal] = useState();
+  const [index, setIndex] = useState();
+
   // fetch the item that was clicked
   const fetchedBlog = blogData?.data?.find((blog) => blog.id == id);
+
+  // if no blog is fetched
+  if (!fetchedBlog) {
+    return (
+      <section className="loaded-container">
+        <h1>{`Blog with ID ${id} does not exist.`}</h1>
+      </section>
+    );
+  }
 
   const {
     title,
@@ -24,10 +37,6 @@ const BlogPage = () => {
     photogallery,
     video,
   } = fetchedBlog.attributes;
-
-  const [showModal, setShowModal] = useState(false);
-  const [itemOnModal, setItemOnModal] = useState();
-  const [index, setIndex] = useState();
 
   const displayPhotoModal = (index) => {
     setItemOnModal(photogallery.data);
