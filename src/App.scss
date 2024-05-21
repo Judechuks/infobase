@@ -232,3 +232,21 @@ footer {
     background-color: var(--main-clr);
   }
 }
+
+// loaded info, for not found iIDS for blogList and eventList
+.loaded-container {
+  min-height: 40vh;
+  display: grid;
+  place-items: center;
+  @media (min-width: 700px) and (min-height: 1000px) {
+    min-height: 60vh;
+  }
+
+  .loaded-info {
+    text-align: center;
+    font-size: 3rem;
+    @media (max-width: 500px) {
+      font-size: 1.6rem;
+    }
+  }
+}
