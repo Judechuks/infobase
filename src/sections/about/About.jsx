@@ -1,4 +1,5 @@
 // import { aboutData } from "../../constant";
+import { Link } from "react-router-dom";
 import { useGlobalContext } from "../../context";
 import "./About.scss";
 
@@ -21,9 +22,9 @@ const About = () => {
         </article>
         <article>
           <p>{aboutData?.data?.attributes.aboutDesc}</p>
-          <a href="/about" className="btn see-more">
+          <Link to="/about" className="btn see-more">
             Read more
-          </a>
+          </Link>
         </article>
       </div>
     </section>
