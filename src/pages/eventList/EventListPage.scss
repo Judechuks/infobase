@@ -14,14 +14,4 @@
       grid-template-columns: 1fr;
     }
   }
-  .loaded-container {
-    min-height: 40vh;
-    display: grid;
-    place-items: center;
-
-    .loaded-info {
-      text-align: center;
-      font-size: 2rem;
-    }
-  }
 }
