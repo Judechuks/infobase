@@ -1,4 +1,5 @@
 // import { heroData } from "../../constant";
+import { Link } from "react-router-dom";
 import { useGlobalContext } from "../../context";
 import "./Hero.scss";
 
@@ -15,9 +16,9 @@ const Hero = () => {
       <article>
         <h1>{heroData?.data?.attributes?.heroTitle}</h1>
         <p>{heroData?.data?.attributes?.heroDesc}</p>
-        <a href="/blog" className="btn">
+        <Link to="/blog" className="btn">
           Get Started
-        </a>
+        </Link>
       </article>
     </section>
   );
