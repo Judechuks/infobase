@@ -52,6 +52,7 @@ const BlogListPage = () => {
     <section id="blog-container">
       <h1 className="section-title">Blogs</h1>
       <div className="blog-category">
+        {/* categories */}
         {categoryBtns.map((btn, index) => (
           <button
             key={index}
@@ -64,11 +65,34 @@ const BlogListPage = () => {
           </button>
         ))}
       </div>
+
+      {/* display blogs */}
       <article>
         {currentItems?.map((blog, index) => (
           <Blog key={index} id={blog.id} {...blog?.attributes} />
         ))}
       </article>
+
+      {/* if the event items is empty */}
+      {items?.length == 0 && currentItems?.length == 0 && (
+        <section className="loaded-container">
+          <h1 className="loaded-info">
+            There is currently no {active !== "all" && active} blog.
+          </h1>
+        </section>
+      )}
+
+      {/* if the event items is not empty, but currentItem is empty then you are in the wrong slide */}
+      {items?.length > 0 && currentItems?.length == 0 && (
+        <section className="loaded-container">
+          <h1 className="loaded-info">
+            There is no {active !== "all" && active} blog in this slide. Click
+            on the page number or prev button.
+          </h1>
+        </section>
+      )}
+
+      {/* Pagination */}
       <ReactPaginate
         breakLabel="..."
         nextLabel="next >"
