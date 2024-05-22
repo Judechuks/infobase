@@ -49,6 +49,7 @@ const EventListPage = () => {
     <section id="events-container">
       <h1 className="section-title">Events</h1>
       <div className="event-category">
+        {/* categories */}
         {categoryBtns.map((btn, index) => (
           <button
             key={index}
@@ -61,17 +62,35 @@ const EventListPage = () => {
           </button>
         ))}
       </div>
+
+      {/* display events */}
       <article>
         {currentItems?.length > 0 &&
           currentItems?.map((event, index) => (
             <Event key={index} {...event?.attributes} id={event.id} />
           ))}
       </article>
-      {currentItems?.length == 0 && active !== "all" && (
+
+      {/* if the event items is empty */}
+      {items?.length == 0 && currentItems?.length == 0 && (
         <section className="loaded-container">
-          <h1 className="loaded-info">There is currently no {active} event.</h1>
+          <h1 className="loaded-info">
+            There is currently no {active !== "all" && active} event.
+          </h1>
         </section>
       )}
+
+      {/* if the event items is not empty, but currentItem is empty then you are in the wrong slide */}
+      {items?.length > 0 && currentItems?.length == 0 && (
+        <section className="loaded-container">
+          <h1 className="loaded-info">
+            There is no {active !== "all" && active} event in this slide. Click
+            on the page number or prev button
+          </h1>
+        </section>
+      )}
+
+      {/* Pagination */}
       <ReactPaginate
         breakLabel="..."
         nextLabel="next >"
