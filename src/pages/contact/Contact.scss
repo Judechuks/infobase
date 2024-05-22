@@ -20,12 +20,13 @@
   }
   .col-1 .card {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     align-items: start;
     margin-block: 20px;
     span {
       background: var(--footer-bg);
       width: 40px;
+      flex-shrink: 0;
       aspect-ratio: 1/1;
       border-radius: 50%;
       display: grid;
