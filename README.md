@@ -1,6 +1,6 @@
 ## INFOBASE
 
-Infobase is a community dedicated to providing relevants insights, information, and updates on different facets of life that are helpful to individuals, businesses, firms or organizations in decision making.
+Infobase is a community dedicated to providing relevant insights, information, and updates on different facets of life that are helpful to individuals, businesses, firms or organizations in decision-making.
 
 ---
 
@@ -44,7 +44,7 @@ The core features of this project are:
 
 #### PAGES/SECTIONS
 
-The the different pages and sections of this project:
+The different pages and sections of this project:
 
 - #### Header
 - #### Hero
@@ -69,14 +69,14 @@ Installation:
 
 ##### [React-router-dom](https://www.npmjs.com/package/react-router-dom)
 
-for navigating to different routes.
+for navigating different routes.
 Installation:
 
 > `npm i react-router-dom`
 
 ##### [React-paginate](https://www.npmjs.com/package/react-paginate)
 
-for creating paginations, streamlining the number of items that will be displayed at a given time.
+for creating paginations, and streamlining the number of items that will be displayed at a given time.
 Installation:
 
 > `npm i react-paginate`
