@@ -3,7 +3,7 @@ import { useEffect, useState, createContext, useContext } from "react";
 
 const AppContext = createContext();
 // const domain = "http://localhost:1337";
-const domain = "https://certain-desire-1a3d12402a.strapiapp.com";
+const domain = "https://hospitable-approval-e28d91925e.strapiapp.com/";
 
 const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
