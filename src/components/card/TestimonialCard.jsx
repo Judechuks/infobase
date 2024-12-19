@@ -3,15 +3,15 @@ import { useGlobalContext } from "../../context";
 import "./TestimonialCard.scss";
 
 const TestimonialCard = (props) => {
-  // const { generateRating, domain } = useGlobalContext();
-  const { generateRating } = useGlobalContext();
+  const { generateRating, domain } = useGlobalContext();
+  // const { generateRating } = useGlobalContext();
 
   return (
     <article className="testimonial-card">
       <header>
         <img
-          // src={`${domain}${props?.attributes?.image.data.attributes.url}`}
-          src={`${props?.attributes?.image.data.attributes.url}`}
+          src={`${domain}${props?.attributes?.image.data.attributes.url}`}
+          // src={`${props?.attributes?.image.data.attributes.url}`}
           alt={props?.attributes?.name}
         />
         <div>
