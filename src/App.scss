@@ -218,7 +218,8 @@ footer {
 .event-category,
 .blog-category {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   gap: 10px;
   margin-bottom: 15px;
 
@@ -227,6 +228,8 @@ footer {
     color: var(--white-clr);
     cursor: pointer;
     text-transform: capitalize;
+    margin-bottom: 10px;
+    white-space: nowrap;
   }
 
   .active {
