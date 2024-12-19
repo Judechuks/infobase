@@ -5,8 +5,8 @@ import "./AboutUs.scss";
 
 const AboutUs = () => {
   // getting about information
-  // const { aboutData, domain } = useGlobalContext();
-  const { aboutData } = useGlobalContext();
+  const { aboutData, domain } = useGlobalContext();
+  // const { aboutData } = useGlobalContext();
 
   // getting the relevant icon based on the type of statement
   const getIcon = (type) => {
@@ -28,7 +28,7 @@ const AboutUs = () => {
           <h1>{aboutData?.data?.attributes.introTitle}</h1>
           <p>{aboutData?.data?.attributes.introMsg}</p>
           <div className="btn-container">
-            <Link 
+            <Link
               to={aboutData?.data?.attributes.partnershipLink}
               target="_blank"
               className="btn">
@@ -44,8 +44,8 @@ const AboutUs = () => {
       <section className="about">
         <article>
           <img
-            // src={`${domain}${aboutData?.data?.attributes.aboutImg.data?.attributes?.url}`}
-            src={`${aboutData?.data?.attributes.aboutImg.data?.attributes?.url}`}
+            src={`${domain}${aboutData?.data?.attributes.aboutImg.data?.attributes?.url}`}
+            // src={`${aboutData?.data?.attributes.aboutImg.data?.attributes?.url}`}
             alt="about"
           />
         </article>

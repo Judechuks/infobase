@@ -8,8 +8,8 @@ import "./BlogPage.scss";
 
 const BlogPage = () => {
   const { id } = useParams();
-  // const { domain, blogData } = useGlobalContext();
-  const { blogData } = useGlobalContext();
+  const { domain, blogData } = useGlobalContext();
+  // const { blogData } = useGlobalContext();
 
   const [showModal, setShowModal] = useState(false);
   const [itemOnModal, setItemOnModal] = useState();
@@ -63,8 +63,8 @@ const BlogPage = () => {
       <h1 className="section-title">Blog Page</h1>
       {thumbnail.data && (
         <img
-          // src={`${domain}${thumbnail.data?.attributes.url}`}
-          src={`${thumbnail.data?.attributes.url}`}
+          src={`${domain}${thumbnail.data?.attributes.url}`}
+          // src={`${thumbnail.data?.attributes.url}`}
           alt="blog banner"
           className="blog-banner"
         />
@@ -100,8 +100,8 @@ const BlogPage = () => {
                 {photogallery.data.map((photo, index) => (
                   <img
                     key={index}
-                    // src={`${domain}${photo.attributes.url}`}
-                    src={`${photo.attributes.url}`}
+                    src={`${domain}${photo.attributes.url}`}
+                    // src={`${photo.attributes.url}`}
                     alt="photo"
                     onClick={() => displayPhotoModal(index)}
                   />
@@ -113,8 +113,8 @@ const BlogPage = () => {
             <div className="moments">
               <h3>Moments</h3>
               <video
-                // src={`${domain}${video.data.attributes.url}`}
-                src={`${video.data.attributes.url}`}
+                src={`${domain}${video.data.attributes.url}`}
+                // src={`${video.data.attributes.url}`}
                 controls></video>
             </div>
           )}
@@ -132,8 +132,8 @@ const BlogPage = () => {
                         className="related-posts">
                         <div className="thumbnail">
                           <img
-                            // src={`${domain}${post?.attributes.thumbnail.data?.attributes.url}`}
-                            src={`${post?.attributes.thumbnail.data?.attributes.url}`}
+                            src={`${domain}${post?.attributes.thumbnail.data?.attributes.url}`}
+                            // src={`${post?.attributes.thumbnail.data?.attributes.url}`}
                             alt="related post"
                           />
                         </div>

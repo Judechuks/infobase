@@ -106,8 +106,8 @@ const EventPage = () => {
         <div className="banner-image">
           {currentEvent?.attributes.thumbnail.data && (
             <img
-              // src={`${domain}${currentEvent?.attributes.thumbnail.data?.attributes.url}`}
-              src={`${currentEvent?.attributes.thumbnail.data?.attributes.url}`}
+              src={`${domain}${currentEvent?.attributes.thumbnail.data?.attributes.url}`}
+              // src={`${currentEvent?.attributes.thumbnail.data?.attributes.url}`}
               alt="event banner"
             />
           )}
