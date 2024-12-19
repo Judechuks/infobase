@@ -4,8 +4,8 @@ import { useGlobalContext } from "../../context";
 import "./About.scss";
 
 const About = () => {
-  // const { aboutData, domain } = useGlobalContext();
-  const { aboutData } = useGlobalContext();
+  const { aboutData, domain } = useGlobalContext();
+  // const { aboutData } = useGlobalContext();
   return (
     <section id="about">
       <h1 className="section-title">
@@ -15,8 +15,8 @@ const About = () => {
       <div className="about-container">
         <article>
           <img
-            // src={`${domain}${aboutData?.data?.attributes.aboutImg.data?.attributes?.formats?.large?.url}`}
-            src={`${aboutData?.data?.attributes.aboutImg.data?.attributes?.formats?.large?.url}`}
+            src={`${domain}${aboutData?.data?.attributes.aboutImg.data?.attributes?.formats?.large?.url}`}
+            // src={`${aboutData?.data?.attributes.aboutImg.data?.attributes?.formats?.large?.url}`}
             alt="hero image"
           />
         </article>
