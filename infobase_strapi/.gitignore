@@ -113,5 +113,5 @@ dist
 build
 .strapi-updater.json
 
-# heroku
+# To run smoothly while on production
 yarn.lock
