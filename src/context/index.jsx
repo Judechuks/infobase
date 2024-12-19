@@ -2,8 +2,9 @@ import { useEffect, useState, createContext, useContext } from "react";
 // import { eventData } from "../constant";
 
 const AppContext = createContext();
-// const domain = "http://localhost:1337";
-const domain = "https://hospitable-approval-e28d91925e.strapiapp.com";
+// const domain = "http://localhost:1337"; // from localhost
+// const domain = "https://hospitable-approval-e28d91925e.strapiapp.com"; // from cloud.strapi.io
+const domain = "https://infobase-backend.onrender.com"; // from render.com
 
 const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
