@@ -15,7 +15,7 @@ const About = () => {
       <div className="about-container">
         <article>
           <img
-            src={`${domain}/${aboutData?.data?.attributes.aboutImg.data?.attributes?.formats?.large?.url}`}
+            src={`${domain}${aboutData?.data?.attributes.aboutImg.data?.attributes?.formats?.large?.url}`}
             // src={`${aboutData?.data?.attributes.aboutImg.data?.attributes?.formats?.large?.url}`}
             alt="hero image"
           />
