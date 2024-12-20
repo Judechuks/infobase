@@ -4,7 +4,7 @@ role: Executive Director at Jay Tech World
 facebook link: https://facebook.com/johndoe.23
 twitter link: https://twitter.com/johndoe28
 instagram link: https://instagram.com/johndoe28
-img: https://infobase-backend.onrender.com/uploads/team_1_ba2b86df90.jpg
+img: https://res.cloudinary.com/dyx4nqyww/image/upload/v1734712484/samples/smile.jpg
 --------
 
 2. name: Mary Jane
@@ -12,7 +12,7 @@ role: Business Strategist
 facebook link: https://facebook.com/maryjane.23
 twitter link: https://twitter.com/maryjane28
 instagram link: https://instagram.com/maryjane28
-img: https://infobase-backend.onrender.com/uploads/team_2_4f3fa3f20f.jpg
+img: https://res.cloudinary.com/dyx4nqyww/image/upload/v1734712486/samples/upscale-face-1.jpg
 --------
 
 3. name: John Paul
@@ -20,7 +20,7 @@ role: Managing Director at Tech Merchant
 facebook link: https://facebook.com/john_paul.23
 twitter link: https://twitter.com/john_paul28
 instagram link: https://instagram.com/john_paul28
-img: https://infobase-backend.onrender.com/uploads/team_3_cf165e525b.jpg
+img: https://res.cloudinary.com/dyx4nqyww/image/upload/v1734712476/samples/people/smiling-man.jpg
 --------
 
 4. name: Caroline Smith
@@ -28,23 +28,23 @@ role: Health Specialist
 facebook link: https://facebook.com/caroline_smith.23
 twitter link: https://twitter.com/caroline_smith28
 instagram link: https://instagram.com/caroline_smith28
-img: https://infobase-backend.onrender.com/uploads/team_4_fc56bb98df.jpg
+img: https://res.cloudinary.com/dyx4nqyww/image/upload/v1734712486/cld-sample.jpg
 =======================================================================
 Sponsors
 1. name: Jay Tech World
-logo: https://infobase-backend.onrender.com/uploads/channel_profile_81662c486d.jpg
+logo: https://res.cloudinary.com/dyx4nqyww/image/upload/v1734723858/jay_tech_lhu8kx.jpg
 --------
 2. name: JayCee Concept
-logo: https://infobase-backend.onrender.com/uploads/JC_logo_7317af218a.png
+logo: https://res.cloudinary.com/dyx4nqyww/image/upload/v1734723858/JC_3D_zpkmub.png
 --------
 3. name: Tech Merchant
-logo: https://infobase-backend.onrender.com/uploads/images_8ef665e58f.jpeg
+logo: https://res.cloudinary.com/dyx4nqyww/image/upload/v1734723858/tech_merchant_xvqqt9.jpg
 --------
 4. name: Just course Hub
-logo: https://infobase-backend.onrender.com/uploads/Logo_e8a56fc288.png
+logo: https://res.cloudinary.com/dyx4nqyww/image/upload/v1734723858/jc_bbhppz.png
 --------
 5. name: Digital Growth Ltd
-logo: https://infobase-backend.onrender.com/uploads/Web_dev_a118d7713f.jpeg
+logo: https://res.cloudinary.com/dyx4nqyww/image/upload/v1734723858/digital_growth_no3hps.jpg
 =======================================================================
 EVENTS
 1. title: Tech Creative Connect
@@ -517,26 +517,26 @@ In summary, sustainable construction involves using eco-friendly materials and a
 =======================================================================
 AUTHORS
 1. name: John Doe
-img: https://infobase-backend.onrender.com/uploads/team_1_ba2b86df90.jpg
+img: https://res.cloudinary.com/dyx4nqyww/image/upload/v1734712484/samples/smile.jpg
 blogs written: 
 i. web dev journey, 
 ii. Comparing Consumer Electronics by Category: Making Informed Choices
 iii. 5G Technology: Revolutionizing How We Live and Work
 --------
 2. name: Mary Jane
-img: https://infobase-backend.onrender.com/uploads/team_2_4f3fa3f20f.jpg
+img: https://res.cloudinary.com/dyx4nqyww/image/upload/v1734712486/samples/upscale-face-1.jpg
 blogs written: 
 i. The cultural significance of Music
 ii. Eco-Friendly Materials and Green Construction Methods: Paving the Way for Sustainable Buildings
 --------
 3. name: John Paul
-img: https://infobase-backend.onrender.com/uploads/team_3_cf165e525b.jpg
+img: https://res.cloudinary.com/dyx4nqyww/image/upload/v1734712476/samples/people/smiling-man.jpg
 blogs written: 
 i. The Impact of Artificial Intelligence (AI) on Different Industries
 ii. Beyond Gaming: Unveiling the Transformative Impact of Virtual Reality
 --------
 4. name: Caroline Smith
-img: https://infobase-backend.onrender.com/uploads/team_4_fc56bb98df.jpg
+img: https://res.cloudinary.com/dyx4nqyww/image/upload/v1734712486/cld-sample.jpg
 blogs written: 
 i. The essense of culture
 ii. The Ethics of Artificial Intelligence: Navigating the Moral Landscape
