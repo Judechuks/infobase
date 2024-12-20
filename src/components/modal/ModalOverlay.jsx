@@ -1,9 +1,9 @@
 import { RiCloseFill } from "react-icons/ri";
-import { useGlobalContext } from "../../context";
+// import { useGlobalContext } from "../../context";
 import "./ModalOverlay.scss";
 
 const ModalOverlay = ({ index, setIndex, itemOnModal, setShowModal }) => {
-  const { domain } = useGlobalContext();
+  // const { domain } = useGlobalContext();
 
   const prevSlide = (index) => {
     if (index == 0) {
@@ -31,8 +31,8 @@ const ModalOverlay = ({ index, setIndex, itemOnModal, setShowModal }) => {
             itemOnModal?.map((item, itemIndex) => (
               <img
                 key={itemIndex}
-                src={`${domain}${item.attributes.url}`}
-                // src={`${item.attributes.url}`}
+                // src={`${domain}${item.attributes.url}`}
+                src={`${item.attributes.url}`}
                 alt="photo gallery"
               />
             ))[index] // to get just one of the pictures at a time

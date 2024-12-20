@@ -5,7 +5,8 @@ import { useGlobalContext } from "../../context";
 import "./Event.scss";
 
 const Event = ({ id, thumbnail, title, text, date, time, venue }) => {
-  const { domain, getTime } = useGlobalContext();
+  // const { domain, getTime } = useGlobalContext();
+  const { getTime } = useGlobalContext();
   const dateAndTime = `${date} ${time}`;
   const eventDate = new Date(dateAndTime);
 
@@ -13,8 +14,8 @@ const Event = ({ id, thumbnail, title, text, date, time, venue }) => {
     <div className="event-card">
       <Link to={`/events/${id}`}>
         <img
-          src={`${domain}${thumbnail.data?.attributes.url}`}
-          // src={`${thumbnail.data?.attributes.url}`}
+          // src={`${domain}${thumbnail.data?.attributes.url}`}
+          src={`${thumbnail.data?.attributes.url}`}
           alt="event thumbnail"
         />
       </Link>
