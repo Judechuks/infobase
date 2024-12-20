@@ -114,6 +114,15 @@ Installation:
 
 ---
 
+##### [Cloudinary](https://cloudinary.com/)
+
+Cloudinary offers AI-powered APIs to automate image and video management, transformation and delivery at scale.
+Installation:
+
+> `npm install @strapi/provider-upload-cloudinary`
+
+---
+
 #### UPCOMING FEATURES OR UPDATE
 
 Some features I look forward to including in the project.
