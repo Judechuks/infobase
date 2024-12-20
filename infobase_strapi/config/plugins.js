@@ -1,11 +1,19 @@
+// uplading images to cloudinary
 module.exports = ({ env }) => ({
-  media: {
+  // ...
+  upload: {
     config: {
-      upload: {
-        config: {
-          destination: env("UPLOAD_DIR", "/uploads"), // Replace with Render's path
-        },
+      provider: "cloudinary",
+      providerOptions: {
+        cloud_name: env("CLOUDINARY_NAME"),
+        api_key: env("CLOUDINARY_KEY"),
+        api_secret: env("CLOUDINARY_SECRET"),
+      },
+      actionOptions: {
+        upload: {},
+        delete: {},
       },
     },
   },
+  // ...
 });
