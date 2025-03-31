@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import "./CountDownTimer.scss";
 
@@ -52,4 +53,8 @@ const CountDownTimer = ({ date, time }) => {
 };
 export default CountDownTimer;
 
+CountDownTimer.propTypes = {
+  time: PropTypes.node.isRequired,
+  date: PropTypes.node.isRequired,
+};
 // https://www.digitalocean.com/community/tutorials/react-countdown-timer-react-hooks

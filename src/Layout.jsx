@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Footer, Header } from "./sections";
 import { Spinner } from "./components";
-import { useGlobalContext } from "./context";
+import { useGlobalContext } from "./context/globalContext";
 
 const Layout = () => {
   const { loading } = useGlobalContext();

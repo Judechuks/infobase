@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 // import { blogData } from "../../constant";
-import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../../context/globalContext";
 import { ModalOverlay } from "../../components";
 import "./BlogPage.scss";
 
@@ -115,7 +115,8 @@ const BlogPage = () => {
               <video
                 // src={`${domain}${video.data.attributes.url}`}
                 src={`${video.data.attributes.url}`}
-                controls></video>
+                controls
+              ></video>
             </div>
           )}
 
@@ -129,7 +130,8 @@ const BlogPage = () => {
                       <Link
                         key={post.id}
                         to={`/blog/${post.id}`}
-                        className="related-posts">
+                        className="related-posts"
+                      >
                         <div className="thumbnail">
                           <img
                             // src={`${domain}${post?.attributes.thumbnail.data?.attributes.url}`}

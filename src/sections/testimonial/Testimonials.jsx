@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { TestimonialCard } from "../../components";
-import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../../context/globalContext";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -19,7 +19,8 @@ const Testimonials = () => {
         // spaceBetween={50}
         slidesPerView={1}
         navigation
-        pagination={{ clickable: true }}>
+        pagination={{ clickable: true }}
+      >
         {testimonialData?.data.map((testimonial, index) => (
           <SwiperSlide key={index}>
             <TestimonialCard {...testimonial} />

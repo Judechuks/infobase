@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../../context/globalContext";
 import { Testimonials } from "../../sections";
 import "./AboutUs.scss";
 
@@ -31,7 +31,8 @@ const AboutUs = () => {
             <Link
               to={aboutData?.data?.attributes.partnershipLink}
               target="_blank"
-              className="btn">
+              className="btn"
+            >
               Partner With Us
             </Link>
             <Link to="/contact" className="btn cta">

@@ -1,5 +1,6 @@
 import { FaStar } from "react-icons/fa";
-import { useGlobalContext } from "../../context";
+import PropTypes from "prop-types";
+import { useGlobalContext } from "../../context/globalContext";
 import "./TestimonialCard.scss";
 
 const TestimonialCard = (props) => {
@@ -31,3 +32,7 @@ const TestimonialCard = (props) => {
   );
 };
 export default TestimonialCard;
+
+TestimonialCard.propTypes = {
+  attributes: PropTypes.node.isRequired,
+};

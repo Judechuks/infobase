@@ -1,7 +1,7 @@
 import { Blog } from "../../components";
 import { Link } from "react-router-dom";
 // import { blogData } from "../../constant";
-import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../../context/globalContext";
 import "./RecentBlog.scss";
 
 const RecentBlog = () => {

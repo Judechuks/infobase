@@ -1,7 +1,8 @@
 import { FaCalendar, FaClock, FaLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
-import { useGlobalContext } from "../../context";
+import PropTypes from "prop-types";
+import { useGlobalContext } from "../../context/globalContext";
 import "./Event.scss";
 
 const Event = ({ id, thumbnail, title, text, date, time, venue }) => {
@@ -48,3 +49,14 @@ const Event = ({ id, thumbnail, title, text, date, time, venue }) => {
   );
 };
 export default Event;
+
+Event.propTypes = {
+  attributes: PropTypes.node.isRequired,
+  id: PropTypes.node.isRequired,
+  thumbnail: PropTypes.node.isRequired,
+  title: PropTypes.node.isRequired,
+  text: PropTypes.node.isRequired,
+  date: PropTypes.node.isRequired,
+  time: PropTypes.node.isRequired,
+  venue: PropTypes.node.isRequired,
+};

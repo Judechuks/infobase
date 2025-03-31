@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 // import { footerLinks } from "../../constant";
-import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../../context/globalContext";
 import "./Footer.scss";
 
 const Footer = () => {

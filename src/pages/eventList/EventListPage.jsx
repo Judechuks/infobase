@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import { Event } from "../../components";
-import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../../context/globalContext";
 // import { eventData } from "../../constant";
 import "./EventListPage.scss";
 
@@ -57,7 +57,8 @@ const EventListPage = () => {
             onClick={() => {
               filterBlogs(btn);
               setActive(btn);
-            }}>
+            }}
+          >
             {btn}
           </button>
         ))}

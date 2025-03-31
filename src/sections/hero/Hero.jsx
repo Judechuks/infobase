@@ -1,6 +1,6 @@
 // import { heroData } from "../../constant";
 import { Link } from "react-router-dom";
-import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../../context/globalContext";
 import "./Hero.scss";
 
 const Hero = () => {

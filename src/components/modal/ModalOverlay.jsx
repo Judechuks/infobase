@@ -1,5 +1,6 @@
 import { RiCloseFill } from "react-icons/ri";
-// import { useGlobalContext } from "../../context";
+import { PropTypes } from "prop-types";
+// import { useGlobalContext } from "../../context/globalContext";
 import "./ModalOverlay.scss";
 
 const ModalOverlay = ({ index, setIndex, itemOnModal, setShowModal }) => {
@@ -41,12 +42,14 @@ const ModalOverlay = ({ index, setIndex, itemOnModal, setShowModal }) => {
         <div className="btn-container">
           <button
             className="modal-btn prev-btn"
-            onClick={() => prevSlide(index)}>
+            onClick={() => prevSlide(index)}
+          >
             {"<"}
           </button>
           <button
             className="modal-btn next-btn"
-            onClick={() => nextSlide(index)}>
+            onClick={() => nextSlide(index)}
+          >
             {">"}
           </button>
         </div>
@@ -55,3 +58,9 @@ const ModalOverlay = ({ index, setIndex, itemOnModal, setShowModal }) => {
   );
 };
 export default ModalOverlay;
+ModalOverlay.propTypes = {
+  index: PropTypes.node.isRequired,
+  setIndex: PropTypes.node.isRequired,
+  itemOnModal: PropTypes.node.isRequired,
+  setShowModal: PropTypes.node.isRequired,
+};

@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa6";
 import { CountDownTimer } from "../../components";
 // import { eventData } from "../../constant";
-import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../../context/globalContext";
 import "./EventPage.scss";
 
 const EventPage = () => {

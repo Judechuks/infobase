@@ -1,7 +1,8 @@
-import { useEffect, useState, createContext, useContext } from "react";
+import { useEffect, useState, createContext } from "react";
+import PropTypes from "prop-types";
 // import { eventData } from "../constant";
 
-const AppContext = createContext();
+export const AppContext = createContext();
 // const domain = "http://localhost:1337"; // from localhost
 // const domain = "https://hospitable-approval-e28d91925e.strapiapp.com"; // from cloud.strapi.io
 const domain = "https://infobase-backend.onrender.com"; // from render.com
@@ -57,7 +58,10 @@ const AppProvider = ({ children }) => {
           setLoading(false);
         }
       )
-      .catch((error) => console.error(error));
+      .catch((error) => {
+        console.error(error);
+        setLoading(false);
+      });
   }, []);
 
   const currentDate = new Date();
@@ -112,14 +116,15 @@ const AppProvider = ({ children }) => {
         domain,
         getTime,
         generateRating,
-      }}>
+      }}
+    >
       {children}
     </AppContext.Provider>
   );
 };
 
-export const useGlobalContext = () => {
-  return useContext(AppContext);
-};
-
 export default AppProvider;
+
+AppProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};

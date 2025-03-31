@@ -1,6 +1,6 @@
 import { Event } from "../../components";
 import { Link } from "react-router-dom";
-import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../../context/globalContext";
 import "./UpcomingEvents.scss";
 
 const UpcomingEvents = () => {

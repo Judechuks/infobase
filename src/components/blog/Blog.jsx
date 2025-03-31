@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
-// import { useGlobalContext } from "../../context";
+import PropTypes from "prop-types";
+// import { useGlobalContext } from "../../context/globalContext";
 import "./Blog.scss";
 
-const Blog = ({ id, thumbnail, title, text, author, date, imgLink }) => {
+const Blog = ({ id, thumbnail, title, text, author, date }) => {
   // const { domain } = useGlobalContext();
   const eventDate = new Date(date);
   return (
@@ -33,3 +34,12 @@ const Blog = ({ id, thumbnail, title, text, author, date, imgLink }) => {
   );
 };
 export default Blog;
+
+Blog.propTypes = {
+  id: PropTypes.node.isRequired,
+  thumbnail: PropTypes.node.isRequired,
+  title: PropTypes.node.isRequired,
+  text: PropTypes.string.isRequired,
+  author: PropTypes.object.isRequired,
+  date: PropTypes.node.isRequired,
+};

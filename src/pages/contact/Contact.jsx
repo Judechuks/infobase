@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../../context/globalContext";
 import "./Contact.scss";
 
 const Contact = () => {
@@ -33,7 +33,8 @@ const Contact = () => {
                   <i
                     className={`fa fa-${getContactType(
                       item?.attributes?.type
-                    )}`}></i>
+                    )}`}
+                  ></i>
                 </span>
                 <aside>
                   <h3>{item?.attributes?.type}:</h3>

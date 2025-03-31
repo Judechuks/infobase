@@ -1,4 +1,6 @@
 import { Circles } from "react-loader-spinner";
+import PropTypes from "prop-types";
+
 import "./Spinner.scss";
 
 const Spinner = ({ message }) => {
@@ -12,6 +14,10 @@ const Spinner = ({ message }) => {
   );
 };
 export default Spinner;
+
+Spinner.propTypes = {
+  message: PropTypes.node.isRequired,
+};
 
 /* Where we have Spinners like;
 <Audio /> <Circles /> <Rings /> etc 
